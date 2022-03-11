@@ -1,0 +1,11 @@
+@startuml
+
+usecase r as "traivaille sur un chantier"
+usecase d as "calcule paye"
+usecase h as "heure de travail"
+
+actor Artisant
+Artisant --> r
+d -> h
+h -> r
+@enduml
